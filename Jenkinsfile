@@ -5,7 +5,7 @@ node {
         checkout scm
 
    stage 'Setup'
-        sh '.nvm/versions/node/v16.6.0/bin/npm config set registry  http://registry.npmjs.org/'
+        sh '~/.nvm/versions/node/v16.6.0/bin/npm config set registry  http://registry.npmjs.org/'
         sh 'npm install'
 
    stage 'Mocha test'
