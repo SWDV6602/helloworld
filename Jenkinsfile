@@ -5,8 +5,8 @@ node {
         checkout scm
 
    stage 'Setup'
-        sh 'npm config set registry  http://registry.npmjs.org/'
-        sh 'npm install'
+        sh 'sudo npm config set registry  http://registry.npmjs.org/'
+        sh 'sudo npm install'
 
    stage 'Mocha test'
         sh './node_modules/mocha/bin/mocha'
